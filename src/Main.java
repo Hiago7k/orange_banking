@@ -16,6 +16,13 @@ class Main {
 
         if (response == 2){
             System.out.println("For continue your order acess this link: http.orange.bank/com.br");
+            System.out.println("Who can help you today? ");
+            System.out.println("1 - Check balance");
+            System.out.println("2 - make a deposit");
+            System.out.println("3 - make a withdraw");
+            System.out.println("4 - make a transaction");
+            System.out.println("5 - back to menu");
+            int secondResponse = data.nextInt();
         }else {
             System.out.println("What address is your agency? ");
         }
