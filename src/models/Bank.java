@@ -7,6 +7,6 @@ public class Bank {
     private String cpfOwner;
     private double balance;
     private String clientLevel;
-
-
+    private String clientAddress;
+    private int numberOfBranch;
 }
