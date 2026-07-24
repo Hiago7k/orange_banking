@@ -1,4 +1,5 @@
 package models;
 
-public class VirtualBranch {
+public class VirtualBranch extends Bank {
+    private String app;
 }
