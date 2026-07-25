@@ -36,6 +36,15 @@ class Main {
                     break;
                 case 3:
                     // Finance Investments
+                    System.out.println("Welcome to your wallet who can help you today? ");
+                    System.out.println("1 - Check balance of investments");
+                    System.out.println("2 - Invest money");
+                    int responseInvestments = data.nextInt();
+                    if (responseInvestments == 2){
+                        System.out.println("Choose your type of investments you want buy today");
+                    }
+
+
                     break;
                 case 0:
                     // Leave
