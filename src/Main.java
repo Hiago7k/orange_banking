@@ -1,7 +1,11 @@
+import models.Bank;
+
 import java.util.Scanner;
 
 class Main {
     static void main() {
+
+        Bank bank1 = new Bank("Savings", 93432, "Street Santos Dummont 1032", "Diamond", 15000.0, "323.2323-14", 5555, "Hiago Mendes");
 
         System.out.println("---------------------------------");
         System.out.println("**** Welcome to Orange Bank ****");
@@ -58,7 +62,6 @@ class Main {
                     System.out.println("Unknow option please type again: ");
                     break;
             }
-
         }
     }
 }
