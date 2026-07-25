@@ -18,20 +18,33 @@ class Main {
             Scanner data = new Scanner(System.in);
             response = data.nextInt();
 
+            switch(response){
+                case 1:
+                    // Agency Physical
+                    System.out.println("Who can help you today? ");
+                    System.out.println("1 - Check balance");
+                    System.out.println("2 - make a deposit");
+                    System.out.println("3 - make a withdraw");
+                    System.out.println("4 - make a transaction");
+                    System.out.println("0 - Back to menu ");
+                    int secondResponse = data.nextInt();
+                    break;
+                case 2:
+                    // Agency Virtual
+                    System.out.println("For continue your order access this link: http.orange.bank/com.br");
 
-            if (response == 2){
-                System.out.println("For continue your order access this link: http.orange.bank/com.br");
-            }else if(response == 1) {
-                System.out.println("Who can help you today? ");
-                System.out.println("1 - Check balance");
-                System.out.println("2 - make a deposit");
-                System.out.println("3 - make a withdraw");
-                System.out.println("4 - make a transaction");
-                System.out.println("0 - To Leave");
-                int secondResponse = data.nextInt();
-            }else {
-                break;
+                    break;
+                case 3:
+                    // Finance Investments
+                    break;
+                case 0:
+                    // Leave
+                    break;
+                default:
+                    System.out.println("Unknow option please type again: ");
+                    break;
             }
+
         }
     }
 }
