@@ -40,8 +40,13 @@ class Main {
                     System.out.println("1 - Check balance of investments");
                     System.out.println("2 - Invest money");
                     int responseInvestments = data.nextInt();
+
                     if (responseInvestments == 2){
                         System.out.println("Choose your type of investments you want buy today");
+                        System.out.println("1 - ETFs");
+                        System.out.println("2 - Stocks");
+                        System.out.println("3 - Criptos");
+                        int responseInvestmentsBuy = data.nextInt();
                     }
 
 
