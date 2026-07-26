@@ -29,4 +29,14 @@ public class Bank {
         System.out.println("Your balance is: " + balance);
     };
 
+    public void depositBalance(double value){
+        if (value > 0) {
+            balance = balance + value;
+            System.out.println("Your new balance after deposit is: " + balance);
+        }else {
+            System.out.println("Value for deposit invalid!");
+        }
+    };
+
+
     }

@@ -32,6 +32,9 @@ class Main {
                     bank1.showBalance();
 
                     System.out.println("2 - make a deposit");
+
+                    // Create method for make a deposit
+
                     System.out.println("3 - make a withdraw");
                     System.out.println("4 - make a transaction");
                     System.out.println("0 - Back to menu ");
