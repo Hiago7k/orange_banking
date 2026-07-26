@@ -22,5 +22,11 @@ public class Bank {
         this.cpfOwner = cpfOwner;
         this.accountNumber = accountNumber;
         OwnerAccount = ownerAccount;
+
+        };
+
+    public void showBalance(){
+        System.out.println("Your balance is: " + balance);
+    };
+
     }
-}

@@ -27,6 +27,10 @@ class Main {
                     // Agency Physical
                     System.out.println("Who can help you today? ");
                     System.out.println("1 - Check balance");
+
+                    // Create method for show balance
+                    bank1.showBalance();
+
                     System.out.println("2 - make a deposit");
                     System.out.println("3 - make a withdraw");
                     System.out.println("4 - make a transaction");
