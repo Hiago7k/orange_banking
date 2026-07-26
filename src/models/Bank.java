@@ -21,13 +21,14 @@ public class Bank {
         this.balance = balance;
         this.cpfOwner = cpfOwner;
         this.accountNumber = accountNumber;
-        OwnerAccount = ownerAccount;
+        this.OwnerAccount = ownerAccount;
 
-        };
+        }
 
-    public void showBalance(){
-        System.out.println("Your balance is: " + balance);
-    };
+    public void showBankInformation(){
+        System.out.println("Your bank details is: " + balance );
+        System.out.println(accountType + " " + cpfOwner + " " + numberOfBranch + " " + clientAddress + " " + accountNumber );
+    }
 
     public void depositBalance(double value){
         if (value > 0) {
@@ -36,7 +37,7 @@ public class Bank {
         }else {
             System.out.println("Value for deposit invalid!");
         }
-    };
+    }
 
     public void withdrawBalance(double value){
         if(value <= balance){
@@ -45,7 +46,7 @@ public class Bank {
         }else {
             System.out.println("Value for withdraw insufficient");
         }
-    };
+    }
 
     public void makeTransaction(double value, String address){
         if(value <= balance){
@@ -54,8 +55,7 @@ public class Bank {
             System.out.println("Your new balance after transaction is " + balance);
         }else {
             System.out.println("insufficient balance for transaction");
-        };
-    };
-
+        }
+    }
 
     }

@@ -26,10 +26,10 @@ class Main {
                 case 1:
                     // Agency Physical
                     System.out.println("Who can help you today? ");
-                    System.out.println("1 - Check balance");
+                    System.out.println("1 - Check Your bank account information");
 
                     // Create method for show balance
-                    bank1.showBalance();
+                    bank1.showBankInformation();
 
                     System.out.println("2 - make a deposit");
 
