@@ -39,4 +39,14 @@ public class Bank {
     };
 
 
+    public void withdrawBalance(double value){
+        if(value <= balance){
+            balance = balance - value;
+            System.out.println("Your new balance after withdraw is: " + balance);
+        }else {
+            System.out.println("Value for withdraw insufficient");
+        }
+    };
+
+
     }

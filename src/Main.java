@@ -34,8 +34,13 @@ class Main {
                     System.out.println("2 - make a deposit");
 
                     // Create method for make a deposit
+                    bank1.depositBalance(3000);
 
                     System.out.println("3 - make a withdraw");
+
+                    // Create method for make a withdraw
+                    bank1.withdrawBalance(28000);
+
                     System.out.println("4 - make a transaction");
                     System.out.println("0 - Back to menu ");
                     int secondResponse = data.nextInt();
