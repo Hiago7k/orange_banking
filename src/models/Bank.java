@@ -38,7 +38,6 @@ public class Bank {
         }
     };
 
-
     public void withdrawBalance(double value){
         if(value <= balance){
             balance = balance - value;
@@ -46,6 +45,16 @@ public class Bank {
         }else {
             System.out.println("Value for withdraw insufficient");
         }
+    };
+
+    public void makeTransaction(double value, String address){
+        if(value <= balance){
+            balance = balance - value;
+            System.out.println("Transaction confirmed for " + address + " you send " + value);
+            System.out.println("Your new balance after transaction is " + balance);
+        }else {
+            System.out.println("insufficient balance for transaction");
+        };
     };
 
 
